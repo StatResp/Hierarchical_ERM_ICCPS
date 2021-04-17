@@ -77,99 +77,20 @@
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
-
-This project implements an EMS responder allocation decision support system, as well as a discrete event 
-simulator to evaluate the system.   
+This is the public code for A Hierarchical Planner for Dynamic Emergency Responder Allocation. 
 
 ***Disclaimer - This is a work in progress (the project and the readme)***
 
 
-### Built With
-
-* [Python3](https://python.org)
-* [Vis Framework (Pending)](https://link)
-
 ## Getting Started
 
-1. Install required python packages - found in requirements.txt
+1. Install required python packages - found in requirements_2.txt
 
 2. Clone the repo
-```sh
-git clone https://github.com/StatResp/EMS_DSS.git
-```
 
-3. Update the configuration files to match your environment structure to point the code to the correct data 
-directories. Config files include: 
- * scenarios/gridworld_example/definition/grid_world_consts.py
+3. Unzip the data folder, which contains files defining the Davidson county environment as well as synthetic incident chains. 
 
-<!--
-2. Clone the repo
-```sh
-git clone https://github.com/StatResp/EMS_DSS.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
--->
-
-
-## Project Structure
-
-The framework consists of several different components, including decision makers (high and low level), an 
-ems simulator, and several experimental scenarios. 
-
-Currently, only the ems simulator and ems environmental dynamics are implemented. To run an example simulation
-with toy data, run scenarios/gridworld_example/testing.py. This example takes place in a gridworld with 5 depots
-and 3 responders. There are a few manual incidents added to the event queue. It simply sends the nearest available
-responder to an incident when the incident occurs. 
-
-
-
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
-
-<!--
-
-## Roadmap
-
-See the [open issues](https://github.com/StatResp/EMS_DSS/issues) for a list of proposed features (and known issues).
-
-
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
--->
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@](https://twitter.com/) - geoffrey.a.pettet@vanderbilt.edu
-
-Project Link: [https://github.com/StatResp/EMS_DSS](https://github.com/StatResp/EMS_DSS)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
+4. To run examples to understand how the project works, please see the code_root/scenarios/Nashville_1 directory. Inside are several sample experiments that use various policies (greedy, only low level planning, and high + low level planning) and use stationary and non-stationary synthetic incident data. There is also an example showing how to simulate responder failures. 
 
 
 
