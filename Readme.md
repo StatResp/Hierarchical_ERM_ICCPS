@@ -74,7 +74,7 @@ This is the public code for A Hierarchical Planner for Dynamic Emergency Respond
 
 3. Unzip the data folder, which contains files defining the Davidson county environment as well as synthetic incident chains. 
 
-4. To run examples to understand how the project works, please see the code_root/scenarios/Nashville_1 directory. Inside are several sample experiments that use various policies (greedy, only low level planning, and high + low level planning) and use stationary and non-stationary synthetic incident data. There is also an example showing how to simulate responder failures. 
+4. To run examples to understand how the project works, please see the code_root/scenarios/Nashville_1/Public_Examples directory. Inside are several sample experiments that use various policies (greedy, only low level planning, and high + low level planning) and use stationary and non-stationary synthetic incident data. There is also an example showing how to simulate responder failures. 
 
 
 
